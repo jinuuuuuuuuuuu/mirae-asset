@@ -12,8 +12,9 @@ from pathlib import Path
 
 import openpyxl
 
-DOCS_DIR = Path(r"C:\Users\kevin\pension-agent\data\raw\docs\docs_renamed")
-OUT_DIR = Path(r"C:\Users\kevin\pension-agent\data\processed")
+ROOT = Path(__file__).resolve().parents[1]
+DOCS_DIR = ROOT / "data" / "raw" / "docs" / "docs_renamed"
+OUT_DIR = ROOT / "data" / "processed"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
